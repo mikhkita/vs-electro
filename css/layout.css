@@ -539,6 +539,7 @@ input:-moz-placeholder {
 				left: 0px;
 				top: 0px;
 			}
+
 			.b-main-slider-cont .main-contentSlider-slide{
 				display: table;
 				height: 379px;	
@@ -594,6 +595,9 @@ input:-moz-placeholder {
 								font-size: 18px;
 								margin-left: 2px;
 							}
+					.b-main-slider-cont .arrow {
+						background-image: url("../i/slider-arrows.png");
+					}
 					.b-main-slider-cont .left-arrow{
 						left: 50%;
 						margin-left: -480px;

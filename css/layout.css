@@ -376,7 +376,6 @@ input:-moz-placeholder {
 				margin-left: 1px;
 			}
 		.b-2 .b-block .basket{
-			margin-left: 97px;
   			margin-top: 10px;
 		}
 			.b-2 .b-block .basket h3{
@@ -490,7 +489,7 @@ input:-moz-placeholder {
 	display: none !important;
 }
 .b-main-slider-cont {
-	
+	overflow: hidden;
 }
 	.b-main-slider-cont .main-backSlider .slide{
 		background-size: cover;

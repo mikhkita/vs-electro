@@ -3,7 +3,8 @@ $(document).ready(function(){
 		nowItem = 0,
 		items = new Array(),
 		inter,
-		blocked = false;
+		blocked = false,
+		mouseon = false;
 
 	$(".main-contentSlider>div").each(function(){
 		items.push($(this));
@@ -17,7 +18,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$(".left-arrow-back").click();
 		},300);
-		clearInterval(inter);
+		// clearInterval(inter);
 		return false;
 	});
 	$(".b-main-contentSlider-nav .right-arrow").click(function(){
@@ -26,7 +27,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$(".right-arrow-back").click();
 		},300);
-		clearInterval(inter);
+		// clearInterval(inter);
 		return false;
 	});
 
@@ -45,12 +46,24 @@ $(document).ready(function(){
 		},300);
 	}
 
+	$(".b-main-slider-cont").hover(function(){
+		mouseon = true;
+	},function(){
+		mouseon = false;
+	});
+
 	$("body").on("click",".slick-dots button",function(){
 		var cur = $(this).text()*1-1;
 		if( cur != nowItem ) goTo(cur, (nowItem > cur)?-1:1 );
 	});
 
+	var swipeh = new MobiSwipe("b-main-slider-cont");
+        swipeh.direction = swipeh.HORIZONTAL;
+    	swipeh.onswiperight = function() { $(".b-main-contentSlider-nav .left-arrow").click(); };
+    	swipeh.onswipeleft = function() { $(".b-main-contentSlider-nav .right-arrow").click(); };
+
 	inter = setInterval(function(){
+		if( mouseon ) return false;
 		$(".b-main-contentSlider-nav .right-arrow").click();
 	},5000);
 

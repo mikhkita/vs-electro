@@ -43,7 +43,6 @@ body {
 	text-align: center;
 	font-family: 'OSR';
 	overflow-x: hidden;
-	overflow-y: scroll;
 	color: #1a1a1a;
 }
 a{
@@ -449,15 +448,16 @@ input:-moz-placeholder {
 	  				background-repeat: no-repeat;
 	  				background-image: url('../i/menu.png');
 				}
-			.b-2 .b-block .search .right {
+			.b-2 .b-block .search .search-cont {
 				border: 1px solid #cccccc;
 				border-bottom: 2px solid #cccccc;
 				border-left: none;
 				border-radius: 0px 5px 5px 0px;
 				background-color: #fff;
-				display: table;
-			}
-				.b-2 .b-block .search .right label {
+			
+				width: 763px;
+}
+				.b-2 .b-block .search .search-cont label {
 					display: block;
 					width: 44px;
 					height: 44px;
@@ -465,26 +465,31 @@ input:-moz-placeholder {
 					background-position: 50%;
 					background-repeat: no-repeat;
 				}
-					.b-2 .b-block .search .right label:hover {
+					.b-2 .b-block .search .search-cont label:hover {
 						cursor: pointer;
 					}
 
-				.b-2 .b-block .search .right input{
+				.b-2 .b-block .search .search-cont input{
 					font-size: 13px;
 					height: 44px;
   					border: none;
   					
-					width: 607px;
+					width: 612px;
 
 				}
-				.b-2 .b-block .search .right div {
-					display: table-cell;
-					padding: 6px;
-					vertical-align: middle;
-				}
-					.b-2 .b-block .search .right div button {
+				.b-2 .b-block .search .search-cont div {
+					display: inline-block;
+				
+					margin-top: 7px;
+					width: 100px;
+					height: 31px;
+}
+					.b-2 .b-block .search .search-cont div button {
+   						display: none;
    						width: 100px;
-						padding: 6px 0 6px;
+						
+   						padding: 6px 0 6px;
+
 					}
 .b-main-slider-cont .slick-arrow{
 	display: none !important;

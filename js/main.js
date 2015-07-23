@@ -53,6 +53,13 @@ $(document).ready(function(){
 	    	};
 	    };
 	});
+    $("#search").keyup(function(){
+        if($("#search").val()!='') {
+            $("#search-btn").show();
+        } else {
+            $("#search-btn").hide();
+        }
+    });
     // var $example = $('#slider'),
     // $frame = $('.frame', $example);
 

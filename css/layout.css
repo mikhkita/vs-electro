@@ -128,10 +128,10 @@ button {
 	margin-left: -480px;
 }
 input::-webkit-input-placeholder {
-	/*color: #545454;*/
+	font-family: 'OSR';
 }
 input:-moz-placeholder {
-	/*color: #545454;*/
+	font-family: 'OSR';
 }
 .b-orange-butt{
 	color: #fff;

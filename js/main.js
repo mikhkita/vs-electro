@@ -37,6 +37,20 @@ $(document).ready(function(){
         prevArrow: '<span class="left-arrow arrow"></span>',
         nextArrow: '<span class="right-arrow arrow"></span>'
     });
+    $(window).load(function() {
+	    var h1,h2,h3,height;
+	    for (var i = 0; i < $(".items-cont ul").length; i=i+3) {
+	    	h1 = $(".items-cont ul").eq(i).height();
+	    	h2 = $(".items-cont ul").eq(i+1).height();
+	    	h3 = $(".items-cont ul").eq(i+2).height();
+	    	if(h1>=h2 && h1>=h3) height = h1;
+	    	if(h2>=h1 && h2>=h3) height = h2;
+	    	if(h3>=h1 && h3>=h2) height = h3;
+	    	for (var j = i; j <= (i+2); j++) {
+	    		$(".items-cont ul").eq(j).height(height);
+	    	};
+	    };
+	});
     // var $example = $('#slider'),
     // $frame = $('.frame', $example);
 

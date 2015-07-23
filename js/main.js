@@ -52,6 +52,7 @@ $(document).ready(function(){
 	    		$(".items-cont ul").eq(j).height(height);
 	    	};
 	    };
+        $(".main-backSlider").fadeTo(300,1);
 	});
     $("#search").keyup(function(){
         if($("#search").val()!='') {
@@ -60,6 +61,7 @@ $(document).ready(function(){
             $("#search-btn").hide();
         }
     });
+
     // var $example = $('#slider'),
     // $frame = $('.frame', $example);
 

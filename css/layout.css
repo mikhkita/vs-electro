@@ -496,6 +496,9 @@ input:-moz-placeholder {
 .b-main-slider-cont {
 	overflow: hidden;
 }
+.main-backSlider{
+	opacity: 0;
+}
 	.b-main-slider-cont .main-backSlider .slide{
 		background-size: cover;
 		background-position: 50%;

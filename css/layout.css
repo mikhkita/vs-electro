@@ -549,7 +549,7 @@ input:-moz-placeholder {
 
 			.b-main-slider-cont .main-contentSlider-slide{
 				display: table;
-				height: 379px;	
+				height: 365px;	
 				padding-top: 24px;
 			}
 				.b-main-slider-cont .main-contentSlider .slide{
@@ -583,6 +583,7 @@ input:-moz-placeholder {
 					.b-main-slider-cont .main-contentSlider .slide-right .img-cont{
 					    position: relative;			
 					    display: inline-block;
+					    top: 15px;
 					}
 						.b-main-slider-cont .main-contentSlider .slide-right .img-cont .sticker{
 							position: absolute;

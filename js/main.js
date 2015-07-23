@@ -14,7 +14,53 @@ $(document).ready(function(){
     }
     $(window).resize(resize);
     resize();
-    
+    $('.partners-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        prevArrow: '<span class="left-arrow arrow"></span>',
+        nextArrow: '<span class="right-arrow arrow"></span>'
+    });
+     $('.main-backSlider').slick({
+        dots: true,
+        autoplay: true,
+        arrows: false,
+        swipe: false,
+        fade: true,
+        cssEase: 'linear'
+    });
+    $('.main-contentSlider').slick({
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.main-backSlider',
+        prevArrow: '<span class="left-arrow arrow"></span>',
+        nextArrow: '<span class="right-arrow arrow"></span>'
+    });
+    // var $example = $('#slider'),
+    // $frame = $('.frame', $example);
+
+    // $frame.mightySlider({
+    //     navigation: {
+    //         keyboardNavBy: 'slides'
+    //     },
+    //     commands: {
+    //         pages: 1
+    //     },
+    //     speed: 500,
+    //     easing: 'swing',
+    //     preloadMode:  'all',
+    //     pages: {
+    //         activateOn: 'click'
+    //     },
+    //     cycling: {
+    //         cycleBy:       'slides', // Enable automatic cycling by 'slides' or 'pages'.
+    //         pauseTime:     5000, // Delay between cycles in milliseconds.
+    //         loop:          1,    // Repeat cycling when last slide/page is activated.
+    //         pauseOnHover:  1    // Pause cycling when mouse hovers over the FRAME.
+    //     }
+    // });  
+
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

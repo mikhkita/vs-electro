@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mightyslider.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
@@ -25,6 +27,8 @@
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/mightyslider.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -34,49 +38,321 @@
 </head>
 <body>
 	<ul class="ps-lines">
-		<li class="v" style="margin-left:-501px"></li>
-		<li class="v" style="margin-left:500px"></li>
+		<li class="v" style="margin-left:-481px"></li>
+		<li class="v" style="margin-left:480px"></li>
 		<li class="v" ></li>
 	</ul>
-	<div class="b b-1">
-		<div class="b-block">
-			<div class="b-logo-cont left">
-				<div class="b-logo-text left blue">ФРАНШИЗА "ELECTROFROG"<br/>ОТ КРУПНЕЙШЕГО ЗАВОДА ЗАО "ЛИТМАШДЕТАЛЬ"</div>
-			</div>
-			<div class="b-date-cont right">
-				<h2 class="blue">8 (800) 555 15 24</h2>
-				<p class="right"><a href="#" class="b-get-callback b-orange-butt">Заказать звонок</a></p>
+	<div class="b b-top-menu">
+		<div class="b-block clearfix">
+			<ul class="left clearfix">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Поставщикам</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="right">
+				<h5>Ваш город: <a href="#">Санкт-Петербург</a></h5>
 			</div>
 		</div>
 	</div>
 	<div class="b b-2">
-		<div class="b-block">
-			
+		<div class="b-block clearfix">
+			<div class="logo-cont left">
+				<a href="#"><img src="i/logo.png"></a>
+			</div>
+			<div class="desc left">
+				<h4>Бесшумные<br>газовые электрогенераторы с доставкой по всей России</h4>
+			</div>
+			<div class="call left">
+				<h2>+7 (495) 777-96-37</h2>
+				<a href="#" class="b-orange-butt">Заказать звонок</a>
+			</div>
+			<div class="basket left">
+				<h3>Моя корзина</h3>
+				<h6>Сейчас Ваша корзина пуста</h6>
+			</div>
+			<div class="search clearfix">
+				<div class="catalog left">Каталог товаров</div>
+				<div class="right clearfix">
+					<label class="left" for='search'></label>
+					<input class="left" id="search" placeholder="Введите название товара">
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-3">
-		<div class="b-block">
-			
+	<div class="b b-main-slider-cont">
+		<div class="main-backSlider">
+			<div class="slide" style="background-image: url('i/slide-back1.jpg');"></div>
+			<div class="slide" class="slide" style="background-image: url('i/slide-back2.jpg');"></div>
+			<div class="slide" style="background-image: url('i/slide-back3.jpg');"></div>
+		</div>
+		<div class="main-contentSlider b-block b-absolute">
+			<div>
+				<div class="slide slide-left">
+					<h2>АКЦИЯ!</h2>
+					<h3>Силовая часть в шкафу управления строится на базе комплектующих Schneider Electric или ABB, специиально разработанных для высоких напряжений.</h3>
+					<a href="#" class="b-orange-butt">Подробнее</a>
+				</div>
+				<div class="slide slide-right">
+					<div class="img-cont">
+						<img src="i/slide-1.png">
+						<div class="sticker">15 000 <span>руб.</span></div>
+					</div>			
+				</div>
+			</div>
+			<div>
+				<div class="slide slide-left">
+					<h2>АКЦИЯ!</h2>
+					<h3>Силовая часть в шкафу управления строится на базе комплектующих Schneider Electric или ABB, специиально разработанных для высоких напряжений. Силовая часть в шкафу управления строится на базе комплектующих Schneider Electric или ABB, специиально разработанных для высоких напряжений.</h3>
+					<a href="#" class="b-orange-butt">Подробнее</a>
+				</div>
+				<div class="slide slide-right">
+					<div class="img-cont">
+						<img src="i/slide-1.png">
+						<div class="sticker">15 000 <span>руб.</span></div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slide slide-left">
+					<h2>АКЦИЯ!</h2>
+					<h3>Силовая часть в шкафу управления строится на базе комплектующих Schneider Electric или ABB, специиально разработанных для высоких напряжений. Силовая часть в шкафу управления строится на базе комплектующих Schneider Electric или ABB, специиально разработанных для высоких напряжений. Силовая часть в шкафу управления строится на базе комплектующих Schneider Electric или ABB, специиально разработанных для высоких напряжений.</h3>
+					<a href="#" class="b-orange-butt">Подробнее</a>
+				</div>
+				<div class="slide slide-right">
+					<div class="img-cont">
+						<img src="i/slide-1.png">
+						<div class="sticker">15 000 <span>руб.</span></div>
+					</div>
+					
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-4">
+	<div class="b b-catalog back">
 		<div class="b-block">
-			
+			<div class="title">
+				<span></span>
+				<h2>Каталог товаров</h2>
+			</div>
+			<ul class="items-cont clearfix">
+				<li class="grey-block">
+					<div class="img">
+						<div><img src="i/item.png"></div>
+					</div>
+					<div>
+						<h3>Генераторы</h3>
+						<ul class="clearfix">
+							<li>
+								<a href="#">Бензиновые</a>
+							</li>
+							<li>
+								<a href="#">Газовые</a>
+							</li>
+							<li>
+								<a href="#">Дизельные</a>
+							</li>
+							<li>
+								<a href="#">Сварочные</a>
+							</li>
+							<li>
+								<a href="#">Инверторные</a>
+							</li>
+						</ul>
+						<a href="#" class="b-green-butt">Посмотреть все</a>
+					</div>
+				</li>
+				<li class="grey-block">
+					<div class="img">
+						<div><img src="i/item.png"></div>
+					</div>
+					<div>
+						<h3>Cадовая техника</h3>
+						<ul class="clearfix">
+							<li>
+								<a href="#">Мотопомпы</a>
+							</li>
+							<li>
+								<a href="#">Газонокосилки</a>
+							</li>
+							<li>
+								<a href="#">Тримеры</a>
+							</li>
+							<li>
+								<a href="#">Мойки</a>
+							</li>
+							<li>
+								<a href="#">Культиваторы</a>
+							</li>
+							<li>
+								<a href="#">Снегоуборочная техника</a>
+							</li>
+							<li>
+								<a href="#">Бензопилы</a>
+							</li>
+							<li>
+								<a href="#">Электроплиты</a>
+							</li><li>
+								<a href="#">Мотоблоки</a>
+							</li>
+						</ul>
+						<a href="#" class="b-green-butt">Посмотреть все</a>
+					</div>
+				</li>
+				<li class="grey-block">
+					<div class="img">
+						<div><img src="i/item.png"></div>
+					</div>
+					<div>
+						<h3>Снегоуборочная техника</h3>
+						<ul class="clearfix">
+							<li>
+								<a href="#">Электрические снегоуборщики</a>
+							</li>
+							<li>
+								<a href="#">Снегоуборочные тракторы</a>
+							</li>
+							<li>
+								<a href="#">Гусенечные</a>
+							</li>
+							<li>
+								<a href="#">Колесные</a>
+							</li>
+							<li>
+								<a href="#">Электрические</a>
+							</li>
+						</ul>
+						<a href="#" class="b-green-butt">Посмотреть все</a>
+					</div>
+				</li>
+				<li class="grey-block">
+					<div class="img">
+						<div><img src="i/item.png"></div>
+					</div>
+					<div>
+						<h3>Силовая техника</h3>
+						<ul class="clearfix">
+							<li>
+								<a href="#">Источники бесперебойного питания</a>
+							</li>
+							<li>
+								<a href="#">Сварочные аппараты</a>
+							</li>
+							<li>
+								<a href="#">Компресоры</a>
+							</li>
+							<li>
+								<a href="#">Стабилизаторы</a>
+							</li>
+						</ul>
+						<a href="#" class="b-green-butt">Посмотреть все</a>
+					</div>
+				</li>
+				<li class="grey-block">
+					<div class="img">
+						<div><img src="i/item.png"></div>
+					</div>
+					<div>
+						<h3>Строительное оборудование</h3>
+						<ul class="clearfix">
+							<li>
+								<a href="#">Бетономешалки</a>
+							</li>
+							<li>
+								<a href="#">Виброплиты</a>
+							</li>
+						</ul>
+						<a href="#" class="b-green-butt">Посмотреть все</a>
+					</div>
+				</li>
+				<li class="grey-block">
+					<div class="img">
+						<div><img src="i/item.png"></div>
+					</div>
+					<div>
+						<h3>Климатическое оборудование</h3>
+						<ul class="clearfix">
+							<li>
+								<a href="#">Водонагреватели</a>
+							</li>
+							<li>
+								<a href="#">Тепловые завесы</a>
+							</li>
+							<li>
+								<a href="#">Обогреватели</a>
+							</li>
+							<li>
+								<a href="#">Котлы</a>
+							</li>
+						</ul>
+						<a href="#" class="b-green-butt">Посмотреть все</a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<div class="b b-5">
+	<div class="b b-partners">
 		<div class="b-block">
-			
+			<div class="title">
+				<span></span>
+				<h2>Производители</h2>
+			</div>
+			<div class="partners-slider">
+				<div class="cont"><div><img src="i/partner-1.jpg"></div></div>
+				<div class="cont"><div><img src="i/partner-2.jpg"></div></div>
+				<div class="cont"><div><img src="i/partner-3.jpg"></div></div>
+				<div class="cont"><div><img src="i/partner-4.jpg"></div></div>
+				<div class="cont"><div><img src="i/partner-5.jpg"></div></div>
+				<div class="cont"><div><img src="i/partner-5.jpg"></div></div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-6">
 		<div class="b-block">
-			
+			<h3>Надежное решение проблем энергоснабжения</h3>
+			<p>Конструктивные особенности данного оборудования обеспечивают продолжительный срок службы и сравнительно низкую стоимость эксплуатации данного оборудования. Кроме того, за счёт конструктивных особенностей дизель-генераторные установки неприхотливы в обслуживании.Сфера применения дизельных генераторов достаточно обширна: сельское хозяйство, медицинские учреждения, производство, строительство, торговые павильоны, нефтегазовая отрасль, а также места, где отсутствует централизованное электроснабжение.</p>
+			<p>Первыми признаками того, что вам нужно купить дизель генератор, являются отключение центральных сетей энергоснабжения, высокая себестоимость электроэнергии, а также ограниченные возможности централизованных источников энергии в случае расширения мощностей. Ответственность за предложенное решение возлагает на нас обязательства по всесторонней поддержке оборудования на всем протяжении срока службы, что привело к формированию высокопрофессиональной сервисной службы.</p>
 		</div>
 	</div>
-	<div class="b b-7">
-		<div class="b-block">
-			
+	<div class="b b-footer">
+		<div class="b-block clearfix">
+			<div class="left">
+				<a class="logo" href="#"><img src="i/logo-footer.jpg"></a>
+				<h2>+7 (495) 777-96-37</h2>
+				<a href="#" class="b-orange-butt">Заказать звонок</a>
+				<h6>© 2015 Бесшумные газовые<br>электрогенераторы с доставкой по всей России</h6>
+			</div>
+			<div class="left list">
+				<h3>Товары</h3>
+				<ul>
+					<li><a href="#">Генераторы</a></li>
+					<li><a href="#">Стабилизаторы</a></li>
+					<li><a href="#">Источники бесперебойного питания</a></li>
+					<li><a href="#">Сварочные аппараты</a></li>
+				</ul>
+			</div>
+			<div class="left list">
+				<h3>Дополнительно</h3>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Поставщикам</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Оплата</a></li>
+				</ul>
+			</div>
+			<div class="right">
+				<h4><span>Наш адрес:<br></span>г. Москва, 25 км МКАД<br>ТК Конструктор, пав. Ж 1.5</h4>
+				<h4><span>Время работы:<br></span>9.00-21.00 без выходных</h4>
+				<div>
+					<a href="#">Политика конфиденциальности</a>
+					<a href="#">Политика возврата</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-8">

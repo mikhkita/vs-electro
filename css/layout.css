@@ -667,6 +667,7 @@ input:-moz-placeholder {
 						display: inline-block;
 					}
 .b-6 {
+	max-height: 10000px;
 	background-color: #f2f2f2;
 }
 	.b-6 .b-block {

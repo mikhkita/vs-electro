@@ -23,20 +23,22 @@ $(document).ready(function(){
     });
      $('.main-backSlider').slick({
         dots: true,
-        autoplay: true,
-        arrows: false,
+        // autoplay: true,
+        // arrows: false,
         swipe: false,
         fade: true,
-        cssEase: 'linear'
-    });
-    $('.main-contentSlider').slick({
-        autoplay: true,
-        fade: true,
         cssEase: 'linear',
-        asNavFor: '.main-backSlider',
-        prevArrow: '<span class="left-arrow arrow"></span>',
-        nextArrow: '<span class="right-arrow arrow"></span>'
+        prevArrow: '<span class="left-arrow-back"></span>',
+        nextArrow: '<span class="right-arrow-back"></span>'
     });
+    // $('.main-contentSlider').slick({
+    //     autoplay: true,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     asNavFor: '.main-backSlider',
+    //     prevArrow: '<span class="left-arrow arrow"></span>',
+    //     nextArrow: '<span class="right-arrow arrow"></span>'
+    // });
     $(window).load(function() {
 	    var h1,h2,h3,height;
 	    for (var i = 0; i < $(".items-cont ul").length; i=i+3) {

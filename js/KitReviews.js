@@ -1,22 +1,29 @@
 $(document).ready(function(){
-	var count = $(".b-review").length,
+	var count = $(".main-contentSlider>div").length,
 		nowItem = 0,
 		items = new Array(),
 		inter,
 		blocked = false;
 
-	$(".b-review").each(function(){
+	$(".main-contentSlider>div").each(function(){
 		items.push($(this));
+		$(this).hide();
 	});
 	items[0].show();
 
-	$(".b-review-prev").click(function(){
+	$(".b-main-contentSlider-nav .left-arrow").click(function(){
 		goTo( ( nowItem > 0 )?(nowItem-1):(count-1), -1 );
+		setTimeout(function(){
+			$(".left-arrow-back").click();
+		},300);
 		clearInterval(inter);
 		return false;
 	});
-	$(".b-review-next").click(function(){
+	$(".b-main-contentSlider-nav .right-arrow").click(function(){
 		goTo( ( nowItem < count-1 )?(nowItem+1):0, 1 );
+		setTimeout(function(){
+			$(".right-arrow-back").click();
+		},300);
 		clearInterval(inter);
 		return false;
 	});
@@ -31,12 +38,19 @@ $(document).ready(function(){
 			TweenLite.to(items[next], 0.3, { "left" : 0, ease : Quad.easeInOut } );
 			items[next].fadeIn(300);
 			nowItem = next;
-			blocked = false;
+			setTimeout(function(){
+				blocked = false;
+			},500);
 		},300);
 	}
 
-	inter = setInterval(function(){
-		goTo( ( nowItem < count-1 )?(nowItem+1):0, 1 );
-	},4000);
+	$("body").on("click",".slick-dots button",function(){
+		var cur = $(this).text()*1-1;
+		if( cur != nowItem ) goTo(cur, (nowItem > cur)?-1:1 );
+	});
+
+	// inter = setInterval(function(){
+	// 	goTo( ( nowItem < count-1 )?(nowItem+1):0, 1 );
+	// },4000);
 
 });

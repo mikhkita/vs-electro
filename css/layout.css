@@ -1066,12 +1066,12 @@ ul.catalog-cont{
 	.b-category .b-block{
 	
 	}
+		.b-category .b-block .title{
+			margin-bottom: 32px;
+		}
 		.b-category .b-block .filter {
 			width: 220px;
 		}
-			.b-category .b-block .filter form{
-				margin-top: 32px;
-			}
 			.b-category .b-block .filter .filter-item-cont{
 				text-align: left;
 			}
@@ -1172,8 +1172,116 @@ ul.catalog-cont{
 									font-size: 13px;
 									max-width: 195px;
 								}
-
+        .b-category .b-block .list {
+			width: 717px;
+			text-align: left;
+		}
+			.b-category .b-block .list ul.tabs{
+    			border-top: 1px solid #d7d7d7;		
+    			display: inline-block;
+    			border-left: 1px solid #d7d7d7;
+			}
+				.b-category .b-block .list ul.tabs li{
+					background-color: #ececec;
+					float: left;
+					width: 142px;
+					border-right: 1px solid #d7d7d7;
+					border-bottom: 1px solid #d7d7d7;
+					border-left: none;
+					text-align: center;
+				}
+					.b-category .b-block .list ul.tabs li.active{
+						background-color: #d0cfd0;	
+					}
+					.b-category .b-block .list ul.tabs li:hover{
+						background-color: #d0cfd0;
+					}
+					.b-category .b-block .list ul.tabs li a{
+						font-size: 14px;
+						font-family: "OSS";
+						padding: 15px 15px 20px;
+						color: #1a1a1a;
+						display: block;
+					}
+						.b-category .b-block .list ul.tabs li.active a{
+							cursor: default;
+						}
+			.b-category .b-block .list .sort{
+    margin-top: 20px;
 				
+			}
+				.b-category .b-block .list .sort h4{
+					font-size: 13px;
+					font-family: "OSS";
+				
+					margin-right: 20px;
+}
+				.b-category .b-block .list .sort a{
+					font-size: 13px;
+					color: #1a1a1a;
+					display: block;
+					position: relative;
+					border-bottom: 1px dotted #1a1a1a;
+					margin-right: 47px;
+}
+					.b-category .b-block .list .sort a:after{
+						position: absolute;
+  						content: "s";
+  						font-size: 0px;
+  						width: 7px;
+  						height: 4px;
+						right: -15px;
+						top: 9px;
+  						background-position: 0px 50%;
+  						background-repeat: no-repeat;
+  						background-image: url("../i/sort-arrows.png");
+					}
+					.b-category .b-block .list .sort a:hover{
+						border:none !important;
+					}
+					.b-category .b-block .list .sort a.active{
+						background-position: -7px 50%;
+						color: #f98411;
+						border-bottom: 1px dotted #f98411;
+					}
+					.b-category .b-block .list .sort a.active:after{
+						background-position: -7px 50%;
+					}
+				.b-category .b-block .list .sort span{
+					font-size: 13px;
+					display: block;
+					cursor: pointer;
+					position: relative;
+					margin-left: 37px;
+  					margin-top: 2px;
+				}
+					.b-category .b-block .list .sort span:before{
+						position: absolute;
+  						content: "s";
+  						font-size: 0px;
+  						width: 12px;
+  						height: 10px;
+						left: -18px;
+  						top: 5px;
+  						background-position: -32px 50%;
+  						background-repeat: no-repeat;
+  						background-image: url("../i/view-type.png");
+					}
+					.b-category .b-block .list .sort span.window:before{
+						background-position: -10px 50%;
+						width: 10px;
+  						height: 10px;
+					}
+					.b-category .b-block .list .sort span.active{
+						color: #f98411;
+						cursor: default;
+					}
+						.b-category .b-block .list .sort span.active:before{
+							background-position: -20px 50%;
+						}
+						.b-category .b-block .list .sort span.window.active:before{
+							background-position: 0px 50%;
+						}
 @media screen and (max-width: 1250px){
 	
 }

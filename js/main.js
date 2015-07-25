@@ -80,7 +80,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#count').bind("change keyup input click", function() {
+    $('#count,.slider-min,.slider-max').bind("change keyup input click", function() {
         if (this.value.match(/[^0-9]/g)) {
             this.value = this.value.replace(/[^0-9]/g, '');
         }
@@ -103,29 +103,58 @@ $(document).ready(function(){
             $("#count").val(count-1);
         }
     });
-
-    slider_init("price",0,15000);
+    if($( "#price-slider" ).length>0) {
+        slider_init("price",0,15000);
+    }
     
-    function slider_init(name,min,max) {
-        $( "#"+name+"-slider" ).slider({
+    function slider_init(name,min_val,max_val) {
+        var  obj = $( "#"+name+"-slider" ),
+        visible_min_input = $("#"+name+"-min-l"),
+        visible_max_input = $("#"+name+"-max-r"),
+        hidden_min_input = $( "."+name+"-min" ),
+        hidden_max_input = $( "."+name+"-max" ),
+        min_text = $( "#"+name+"-l" ),
+        max_text = $( "#"+name+"-r" );
+        obj.slider({
             range: true,
-            min: min,
-            max: max,
-            values: [ min, max ],
+            min: min_val,
+            max: max_val,
+            values: [ min_val, max_val ],
             slide: function( event, ui ) {
-                $( "."+name+"-min" ).val( ui.values[ 0 ] );
-                $( "."+name+"-max" ).val( ui.values[ 1 ] );
-                $( "#"+name+"-l" ).text( ui.values[ 0 ] );
-                $( "#"+name+"-r" ).text( ui.values[ 1 ] );
+                hidden_min_input.val( ui.values[ 0 ] );
+                hidden_max_input.val( ui.values[ 1 ] );
+                min_text.text( ui.values[ 0 ] );
+                max_text.text( ui.values[ 1 ] );
             },
             change: function( event, ui ) {
-               
+                hidden_min_input.val( ui.values[ 0 ] );
+                hidden_max_input.val( ui.values[ 1 ] );
+                min_text.text( ui.values[ 0 ] );
+                max_text.text( ui.values[ 1 ] );
             }
         });
-        $( "."+name+"-min" ).val( $( "#"+name+"-slider" ).slider( "values", 0 ) );
-        $( "."+name+"-max" ).val( $( "#"+name+"-slider" ).slider( "values", 1 ) );
-        $( "#"+name+"-l" ).text( $( "#"+name+"-slider" ).slider( "values", 0 ) );
-        $( "#"+name+"-r" ).text( $( "#"+name+"-slider" ).slider( "values", 1 ) );
+        hidden_min_input.val( obj.slider( "values", 0 ) );
+        hidden_max_input.val( obj.slider( "values", 1 ) );
+        min_text.text( obj.slider( "values", 0 ) );
+        max_text.text( obj.slider( "values", 1 ) );
+
+        visible_min_input.change(function() {
+            if(($(this).val()*1)<min_val || $(this).val()=='') $(this).val(min_val);
+            if(($(this).val()*1)>visible_max_input.val()*1) $(this).val(visible_max_input.val()*1);
+            obj.slider( "values", 0, $(this).val() );
+        });
+        visible_max_input.change(function() {
+            if(($(this).val()*1)>max_val || $(this).val()=='') $(this).val(max_val);
+            if(($(this).val()*1)<visible_min_input.val()*1) $(this).val(visible_min_input.val()*1);
+            obj.slider( "values", 1, $(this).val() );
+        });
+        $("#"+name+"-min-l").focusout(function(){
+            if(($("#"+name+"-min-l").val()*1)<min_val || $("#"+name+"-min-l").val()=='') $("#"+name+"-min-l").val(min_val);
+            if(($("#"+name+"-min-l").val()*1)>$("#"+name+"-max-r").val()*1) $("#"+name+"-min-l").val($("#"+name+"-max-r").val()*1);
+        });
+        $("."+name+"-max").focusout(function(){
+            if(($("."+name+"-max").val()*1)>max_val || $("."+name+"-max").val()=='') $("."+name+"-max").val(max_val);
+        });
     }
     
     // var $example = $('#slider'),

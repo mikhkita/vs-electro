@@ -92,92 +92,107 @@
 			<ul class="sub-menu clearfix">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Каталог</a></li>
-				<li class="active"><a href="#">Генераторы</a></li>
+				<li class="active"><a href="#">Источники бесперебойного питания</a></li>
 			</ul>
-			<div class="filter left">
-				<div class="title">
+			<div class="title">
 					<span></span>
-					<h2>Генераторы</h2>
+					<h2>Источники бесперебойного питания</h2>
 				</div>
-				<form action="#">
-					<div class="filter-item-cont">
-						<h3>Цена</h3>
-						<div class="filter-item slide-type">
-							<div class="range-inputs">
-								<label>От</label>
-								<input class="price-min">
-								<label>до</label>
-								<input class="price-max">
+			<div class="clearfix">
+				<div class="filter left">	
+					<form action="#">
+						<div class="filter-item-cont">
+							<h3>Цена</h3>
+							<div class="filter-item slide-type">
+								<div class="range-inputs">
+									<label>От</label>
+									<input class="slider-min price-min" id="price-min-l">
+									<label>до</label>
+									<input class="slider-max price-max" id="price-max-r">
+								</div>
+	                        	<div id="price-slider" class="slider-range"></div>
+	                        	<input type='hidden' name="price-min" class="price-min">
+	                            <input type='hidden' name="price-max" class="price-max">
+		                        <div class="slider-value clearfix">
+		                        	<span id="price-l" class="left">15000</span>
+		                        	<span id="price-r" class="right">150000</span>
+		                        </div>
 							</div>
-                        	<div id="price-slider" class="slider-range"></div>
-                        	<input type='hidden' name="price-min" class="price-min">
-                            <input type='hidden' name="price-max" class="price-max">
-	                        <div class="slider-value clearfix">
-	                        	<span id="price-l" class="left">15000</span>
-	                        	<span id="price-r" class="right">150000</span>
-	                        </div>
 						</div>
-					</div>
-					<div class="filter-item-cont">
-						<h3>Производители</h3>
-						<div class="filter-item check-type">
-							<ul>
-								<li>
-                                    <input type="checkbox" id="1" name="arr16[]" value="159">
-                                    <label class="clearfix" for="1">
-                                        <span class="checked"></span>
-                                        <span class="default"></span>   
-                                        <h4>Aurora (13)</h4>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="2" name="arr16[]" value="159">
-                                    <label class="clearfix" for="2">
-                                        <span class="checked"></span>
-                                        <span class="default"></span>   
-                                        <h4>Briggs & Stratton (24)</h4>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="3" name="arr16[]" value="159">
-                                    <label class="clearfix" for="3">
-                                        <span class="checked"></span>
-                                        <span class="default"></span>   
-                                        <h4>Champion (29)</h4>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="4" name="arr16[]" value="159">
-                                    <label class="clearfix" for="4">
-                                        <span class="checked"></span>
-                                        <span class="default"></span>   
-                                        <h4>DDE (28)</h4>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="5" name="arr16[]" value="159">
-                                    <label class="clearfix" for="5">
-                                        <span class="checked"></span>
-                                        <span class="default"></span>   
-                                        <h4>ERGOMAX (14)</h4>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="6" name="arr16[]" value="159">
-                                    <label class="clearfix" for="6">
-                                        <span class="checked"></span>
-                                        <span class="default"></span>   
-                                        <h4>Fogo (18)</h4>
-                                    </label>
-                                </li>
-							</ul>
+						<div class="filter-item-cont">
+							<h3>Производители</h3>
+							<div class="filter-item check-type">
+								<ul>
+									<li>
+	                                    <input type="checkbox" id="1" name="arr16[]" value="159">
+	                                    <label class="clearfix" for="1">
+	                                        <span class="checked"></span>
+	                                        <span class="default"></span>   
+	                                        <h4>Aurora (13)</h4>
+	                                    </label>
+	                                </li>
+	                                <li>
+	                                    <input type="checkbox" id="2" name="arr16[]" value="159">
+	                                    <label class="clearfix" for="2">
+	                                        <span class="checked"></span>
+	                                        <span class="default"></span>   
+	                                        <h4>Briggs & Stratton (24)</h4>
+	                                    </label>
+	                                </li>
+	                                <li>
+	                                    <input type="checkbox" id="3" name="arr16[]" value="159">
+	                                    <label class="clearfix" for="3">
+	                                        <span class="checked"></span>
+	                                        <span class="default"></span>   
+	                                        <h4>Champion (29)</h4>
+	                                    </label>
+	                                </li>
+	                                <li>
+	                                    <input type="checkbox" id="4" name="arr16[]" value="159">
+	                                    <label class="clearfix" for="4">
+	                                        <span class="checked"></span>
+	                                        <span class="default"></span>   
+	                                        <h4>DDE (28)</h4>
+	                                    </label>
+	                                </li>
+	                                <li>
+	                                    <input type="checkbox" id="5" name="arr16[]" value="159">
+	                                    <label class="clearfix" for="5">
+	                                        <span class="checked"></span>
+	                                        <span class="default"></span>   
+	                                        <h4>ERGOMAX (14)</h4>
+	                                    </label>
+	                                </li>
+	                                <li>
+	                                    <input type="checkbox" id="6" name="arr16[]" value="159">
+	                                    <label class="clearfix" for="6">
+	                                        <span class="checked"></span>
+	                                        <span class="default"></span>   
+	                                        <h4>Fogo (18)</h4>
+	                                    </label>
+	                                </li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</form>
-			</div>
-			
-			<div class="right">
+					</form>
+				</div>
 				
+				<div class="list right">
+					<ul class="tabs clearfix">
+						<li class="active"><a href="#">Бензиновые генераторы</a></li>
+						<li><a href="#">Газовые генераторы</a></li>
+						<li><a href="#">Дизельные генераторы</a></li>
+						<li><a href="#">Сварочные генераторы</a></li>
+						<li><a href="#">Инверторные генераторы</a></li>
+					</ul>
+					<div class="sort clearfix">
+						<h4 class="left">Сортировать по:</h4>
+						<a class="active left" href="#">По популярности</a>
+						<a class="left" href="#">По цене</a>
+						<span class="right">Список</span>
+						<span class="window active right">Витрина</span>	
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -107,6 +107,19 @@ $(document).ready(function(){
         slider_init("price",0,15000);
     }
     
+    $("#list-view").click(function(){
+        $("#category-list").addClass("list-view");
+        $("#window-view").removeClass("active");
+        $(this).addClass("active");
+        
+        
+    });
+
+    $("#window-view").click(function(){
+        $(this).addClass("active");
+        $("#category-list").removeClass("list-view");
+        $("#list-view").removeClass("active");
+    });
     function slider_init(name,min_val,max_val) {
         var  obj = $( "#"+name+"-slider" ),
         visible_min_input = $("#"+name+"-min-l"),

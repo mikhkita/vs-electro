@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
@@ -26,6 +27,7 @@
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitReviews.js"></script>
@@ -41,19 +43,6 @@
 		<li class="v" style="margin-left:480px"></li>
 		<li class="v" ></li>
 	</ul>
-	<div class="b b-header-menu">
-		<div class="b-block clearfix">
-			<ul class="left clearfix">
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Поставщикам</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Акции</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</div>
-	</div>
 	<div class="b b-header-main">
 		<div class="b-block clearfix">
 			<div class="logo-cont left">
@@ -62,174 +51,103 @@
 			<div class="desc left">
 				<h4>Бесшумные<br>газовые электрогенераторы с доставкой по всей России</h4>
 			</div>
-			<div class="basket right">
-				<h3>Моя корзина</h3>
-				<h6>Сейчас Ваша корзина пуста</h6>
-			</div>
 			<div class="call right">
 				<h2>+7 (495) 777-96-37</h2>
 				<a href="#" class="b-orange-butt">Заказать звонок</a>
 			</div>
-			<div class="search clearfix">
-				<form action="#">
-					<div class="catalog left">Каталог товаров</div>
-					<div class="search-cont left clearfix">
-						<label class="left" for='search'></label>
-						<input type="text" class="left" id="search" placeholder="Введите название товара">
-						<div>
-							<button id="search-btn" type="submit" class="b-orange-butt">Найти</button>
-						</div>
-					</div>
-				</form>
-			</div>
 		</div>
 	</div>
 
-	<div class="b b-catalog back">
-		<div class="b-block">
-			<ul class="sub-menu clearfix">
-				<li><a href="#">Главная</a></li>
-				<li class="active"><a href="#">Каталог</a></li>
-			</ul>
+	<div class="b b-basket back">
+		<div class="b-block clearfix">
 			<div class="title">
-				<span></span>
-				<h2>Каталог товаров</h2>
+					<span></span>
+					<h2>Корзина</h2>
 			</div>
-			<ul class="catalog-cont clearfix">
-				<li class="grey-block">
-					<div class="img">
-						<div><img src="i/item-1.jpg"></div>
-					</div>
-					<div>
-						<h3>Генераторы</h3>
-						<ul class="clearfix">
-							<li>
-								<a href="#">Бензиновые</a>
-							</li>
-							<li>
-								<a href="#">Газовые</a>
-							</li>
-							<li>
-								<a href="#">Дизельные</a>
-							</li>
-							<li>
-								<a href="#">Сварочные</a>
-							</li>
-							<li>
-								<a href="#">Инверторные</a>
-							</li>
-						</ul>
-						<a href="#" class="b-green-butt">Посмотреть все</a>
-					</div>
-				</li>
-				<li class="grey-block">
-					<div class="img">
-						<div><img src="i/item-2.jpg"></div>
-					</div>
-					<div>
-						<h3>Cадовая техника</h3>
-						<ul class="clearfix">
-							<li>
-								<a href="#">Мотопомпы</a>
-							</li>
-							<li>
-								<a href="#">Газонокосилки</a>
-							</li>
-							<li>
-								<a href="#">Тримеры</a>
-							</li>
-							<li>
-								<a href="#">Мойки</a>
-							</li>
-							<li>
-								<a href="#">Культиваторы</a>
-							</li>
-							<li>
-								<a href="#">Снегоуборочная техника</a>
-							</li>
-							<li>
-								<a href="#">Бензопилы</a>
-							</li>
-							<li>
-								<a href="#">Электроплиты</a>
-							</li><li>
-								<a href="#">Мотоблоки</a>
-							</li>
-						</ul>
-						<a href="#" class="b-green-butt">Посмотреть все</a>
-					</div>
-				</li>
-				<li class="grey-block">
-					<div class="img">
-						<div><img src="i/item-4.jpg"></div>
-					</div>
-					<div>
-						<h3>Силовая техника</h3>
-						<ul class="clearfix">
-							<li>
-								<a href="#">Источники бесперебойного питания</a>
-							</li>
-							<li>
-								<a href="#">Сварочные аппараты</a>
-							</li>
-							<li>
-								<a href="#">Компресоры</a>
-							</li>
-							<li>
-								<a href="#">Стабилизаторы</a>
-							</li>
-						</ul>
-						<a href="#" class="b-green-butt">Посмотреть все</a>
-					</div>
-				</li>
-				<li class="grey-block">
-					<div class="img">
-						<div><img src="i/item-5.jpg"></div>
-					</div>
-					<div>
-						<h3>Строительное оборудование</h3>
-						<ul class="clearfix">
-							<li>
-								<a href="#">Бетономешалки</a>
-							</li>
-							<li>
-								<a href="#">Виброплиты</a>
-							</li>
-						</ul>
-						<a href="#" class="b-green-butt">Посмотреть все</a>
-					</div>
-				</li>
-				<li class="grey-block">
-					<div class="img">
-						<div><img src="i/item-6.jpg"></div>
-					</div>
-					<div>
-						<h3>Климатическое оборудование</h3>
-						<ul class="clearfix">
-							<li>
-								<a href="#">Водонагреватели</a>
-							</li>
-							<li>
-								<a href="#">Тепловые завесы</a>
-							</li>
-							<li>
-								<a href="#">Обогреватели</a>
-							</li>
-							<li>
-								<a href="#">Котлы</a>
-							</li>
-						</ul>
-						<a href="#" class="b-green-butt">Посмотреть все</a>
-					</div>
-				</li>
-			</ul>
+			<div class="basket-title clearfix">
+				<h3 class="left">Товар</h3>
+				<h3 class="left">Цена</h3>
+				<h3 class="left">Количество</h3>
+				<h3 class="right">Сумма, руб.</h3>
+			</div>
+			<form action="#">
+				<ul>
+					<li>
+						<div class="img">
+							<img src="i/basket-item.jpg">
+						</div>
+						<div class="item-desc">
+							<div>
+								<a href="#">ПСМ ADMi-8</a>
+								<p>Независимые источники электроэнергии</p>
+							</div>
+						</div>
+						<div><h4 class="item-price">45 000</h4></div>
+						<div class="item-count">
+							<div class="count clearfix">
+								<span class="plus left" onselectstart="return false;"><i onselectstart="return false;"></i></span>
+								<input id="count" name="count"  maxlength="3" value="1">
+								<span class="minus right" onselectstart="return false;"><i onselectstart="return false;"></i></span>	
+							</div>
+						</div>
+						<div><h4 class="item-sum">45 000</h4></div>
+					</li>
+					<li>
+						<div class="img">
+							<img src="i/basket-item.jpg">
+						</div>
+						<div class="item-desc">
+							<div>
+								<a href="#">ПСМ ADMi-8</a>
+								<p>Независимые источники электроэнергии</p>
+							</div>
+						</div>
+						<div><h4 class="item-price">45 000</h4></div>
+						<div class="item-count">
+							<div class="count clearfix">
+								<span class="plus left" onselectstart="return false;"><i onselectstart="return false;"></i></span>
+								<input id="count" name="count"  maxlength="3" value="1">
+								<span class="minus right" onselectstart="return false;"><i onselectstart="return false;"></i></span>	
+							</div>
+						</div>
+						<div><h4 class="item-sum">45 000</h4></div>
+					</li>
+					<li>
+						<div class="img">
+							<img src="i/basket-item.jpg">
+						</div>
+						<div class="item-desc">
+							<div>
+								<a href="#">ПСМ ADMi-8</a>
+								<p>Независимые источники электроэнергии</p>
+							</div>
+						</div>
+						<div><h4 class="item-price">45 000</h4></div>
+						<div class="item-count">
+							<div class="count clearfix">
+								<span class="plus left" onselectstart="return false;"><i onselectstart="return false;"></i></span>
+								<input id="count" name="count"  maxlength="3" value="1">
+								<span class="minus right" onselectstart="return false;"><i onselectstart="return false;"></i></span>	
+							</div>
+						</div>
+						<div><h4 class="item-sum">45 000</h4></div>
+					</li>
+				</ul>
+				<div class="clearfix">
+					<h5 class="right">Сумма: <span class="value">90 000</span><span class="name"> руб.</span></h5>
+					<h5 class="right amount">Товаров: <span>2</span></h5>
+				</div>
+				<div class="clearfix basket-order">
+					<input type="submit" class="right b-green-butt" value="Оформить заказ">
+					<input class="right" type="text" name="phone" placeholder="Введите Ваш телефон*" required>
+				</div>
+			</form>
 		</div>
 	</div>
-	
 	<div class="b b-footer">
 		<div class="b-block clearfix">
 			<div class="left">
-				<a class="logo" href="#"><img src="i/logo-footer.jpg"></a>
+				<a class="logo" href="#"><img src="i/logo-footer.png"></a>
 				<h2>+7 (495) 777-96-37</h2>
 				<a href="#" class="b-orange-butt">Заказать звонок</a>
 				<h6>© 2015 Бесшумные газовые<br>электрогенераторы с доставкой по всей России</h6>

@@ -15,7 +15,9 @@ $(document).ready(function(){
 	$.validator.addMethod('customPhone', function (value) {
 		return rePhone.test(value);
 	});
-
+	if( $(this).find("input[name=phone]").length ){
+			$(this).find("input[name=phone]").mask(tePhone,{placeholder:"_"});
+		}
 	$(".ajax").parents("form").each(function(){
 		$(this).validate({
 			rules: {

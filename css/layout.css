@@ -1776,7 +1776,6 @@ ul.catalog-cont{
 			margin-top: 20px;
 		}
 .b-continue {
-    margin-top: 28px;
 
 }
 	.b-continue li{
@@ -1787,10 +1786,11 @@ ul.catalog-cont{
 		border-radius: 8px;
 		
 		float: left;
+		margin-top: 42px;
 		margin-right: 42px;
 		text-align: center;
 	}
-	.b-continue li:last-child {
+	.b-continue li:nth-child(4n) {
 		margin-right: 0px;
 	}
 		.b-continue li a {
@@ -1820,6 +1820,9 @@ ul.catalog-cont{
 			height: 38px;
 			
 }
+		.b-continue li:hover h4 {
+			text-decoration: underline;
+		}
 @media screen and (max-width: 1250px){
 	
 }

@@ -873,10 +873,10 @@ ul.catalog-cont{
 				line-height: 1.692;
 				margin-bottom: 16px;
 			}	
-				.b-footer .b-block .right h4 span{
+				.b-footer .b-block .right h4 b{
 					font-family: "OSS";
 				}
-			.b-footer .b-block .right div{
+			.b-footer .b-block .b-bottom-buttons{
 				text-align: right;
 				margin-top: 38px;
 			}

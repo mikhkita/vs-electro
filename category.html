@@ -106,16 +106,14 @@
 							<div class="filter-item slide-type">
 								<div class="range-inputs">
 									<label>От</label>
-									<input class="slider-min price-min" id="price-min-l">
+									<input name="price-min" class="min-val" maxlength="6">
 									<label>до</label>
-									<input class="slider-max price-max" id="price-max-r">
+									<input name="price-max" class="max-val" maxlength="6">
 								</div>
-	                        	<div id="price-slider" class="slider-range"></div>
-	                        	<input type='hidden' name="price-min" class="price-min">
-	                            <input type='hidden' name="price-max" class="price-max">
+	                        	<div data-min="600" data-max="2000" data-min-cur="700" data-max-cur="1500" data-step="100" class="slider-range"></div>
 		                        <div class="slider-value clearfix">
-		                        	<span id="price-l" class="left">15000</span>
-		                        	<span id="price-r" class="right">150000</span>
+		                        	<span class="min-text left"></span>
+		                        	<span class="max-text right"></span>
 		                        </div>
 							</div>
 						</div>
@@ -251,9 +249,9 @@
 	<div class="b b-basket-small">
 		<div class="clearfix">
 			<h4 class="left">Корзина</h4>
-			<a class="cross right" href="#"></a>
+			<a id="close-basket" class="cross right" href="#"></a>
 		</div>
-		<ul>
+		<ul class="basket-small-cont">
 			<li>
 				<div class="img">
 					<img src="i/mini-basket.jpg">
@@ -310,7 +308,11 @@
 			</li>
 		</ul>
 		<div class="order clearfix">
-			<a class="show-all left" href="#">Показать все</a>
+			<div class="left">
+				<h5>5 товаров на сумму <span>5 690 р.</span></h5>
+				<a class="link" id="basket-show-all" href="#">Показать все</a>
+				<a class="link" id="basket-open" href="#">Развернуть</a>
+			</div>
 			<a class="b-orange-butt right" href="#">Оформить</a>
 		</div>
 	</div>

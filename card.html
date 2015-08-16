@@ -68,7 +68,7 @@
 			</div>
 			<div class="call right">
 				<h2>+7 (495) 777-96-37</h2>
-				<a href="#" class="b-orange-butt">Заказать звонок</a>
+				<a href="#" class="b-orange-butt fancy" data-block="#b-popup-callback">Заказать звонок</a>
 			</div>
 			
 			<div class="search clearfix">
@@ -161,8 +161,8 @@
 						<div class="price clearfix">
 							<h3 class="left">Цена: <span class="value">42 400</span><span class="name"> руб.</span></h3>
 							<div class="right">
-								<a class="reserve" href="#">Забронировать</a>
-								<a class="consult" href="#">Проконсультироваться</a>
+								<a class="reserve fancy" data-block="#b-popup-reserve" href="#">Забронировать</a>
+								<a class="consult fancy" data-block="#b-popup-consult" href="#">Проконсультироваться</a>
 							</div>
 						</div>
 						<div class="order clearfix">
@@ -226,36 +226,60 @@
 	</div>
 	
 <div style="display:none;">
-	<div id="b-popup-1">
-			<div class="for_all b-popup" >
-				<h3>Оставьте заявку</h3>
-				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
-					<div class="b-popup-form">
-						<label for="name">Введите Ваше имя</label>
-						<input type="text" id="name" name="name" required/>
-						<label for="tel">Введите Ваш номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
-						<input type="hidden" name="subject" value="Заказ"/>
-						<input type="submit" class="ajax b-orange-butt" value="Заказать">
-					</div>
-				</form>
-			</div>
-		</div>
-		<div id="b-popup-2">
-			<div class="b-thanks b-popup">
-				<h3>Спасибо!</h3>
-				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-			</div>
-		</div>
-		<div id="b-popup-error">
-			<div class="b-thanks b-popup">
-				<h3>Ошибка отправки!</h3>
-				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-			</div>
+	<div id="b-popup-reserve">
+		<div class="for_all b-popup">
+			<h3>Забронировать</h3>
+			<h4>Дизельный генератор PRORAB 5001 DEB</h4>
+			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-reserve">
+				<div class="b-popup-form">
+					<input type="text" name="name" placeholder="Введите Ваше имя*" required/>
+					<input type="text" name="phone" placeholder="Введите Ваш телефон*" required/>
+					<input type="hidden" name="subject" value="Бронь"/>
+				</div>
+				<div class="clearfix">
+					<input type="submit" class="ajax b-green-butt right" value="Забронировать">
+				</div>
+			</form>
 		</div>
 	</div>
+	<div id="b-popup-consult">
+		<div class="for_all b-popup">
+			<h3>Проконсультироваться</h3>
+			<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-consult">
+				<div class="b-popup-form">
+					<input type="text" name="name" placeholder="Введите Ваше имя*" required/>
+					<input type="text" name="phone" placeholder="Введите Ваш телефон*" required/>
+					<textarea name="1" placeholder="Введите Ваш вопрос*" required/></textarea>
+					<input type="hidden" name="1-name" value="Вопрос"/>
+					<input type="hidden" name="subject" value="Консультация"/>
+				</div>
+				<div class="clearfix">
+					<input type="submit" class="ajax b-green-butt right" value="Отправить">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="b-popup-callback">
+		<div class="for_all b-popup callback">
+			<form action="kitsend.php" class="clearfix" method="POST" id="b-form-1" data-block="#b-popup-consult">
+					<input type="text" name="phone" placeholder="Введите Ваш телефон*" required/>
+					<input type="submit" class="ajax b-green-butt right" value="Заказать звонок">
+					<input type="hidden" name="subject" value="Обратный звонок"/>				
+			</form>
+		</div>
+	</div>
+	<div id="b-popup-thanks">
+		<div class="b-thanks b-popup">
+			<h3>Спасибо! Ваша заявка принята!</h3>
+			<h4>Наш менеджер свяжется с Вами в течении 15 минут</h4>
+		</div>
+	</div>
+	<div id="b-popup-error">
+		<div class="b-thanks b-popup">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+		</div>
+	</div>
+</div>
 </body>
 </html>

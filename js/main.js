@@ -73,32 +73,31 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#count,.min-val,.max-val').bind("change keyup input click", function() {
+    $('.count-cont input,.min-val,.max-val').bind("change keyup input click", function() {
         if (this.value.match(/[^0-9]/g)) {
             this.value = this.value.replace(/[^0-9]/g, '');
         }
     });
-    $("#count").keyup(function(){
-        if($("#count").val()=='0') $("#count").val("1");
+    $(".count-cont input").keyup(function(){
+        if($(this).val()=='0') $(this).val("1");
     });
-    $("#count").focusout(function(){
-        if($("#count").val()=='') $("#count").val("1");
+    $(".count-cont input").focusout(function(){
+        if($(this).val()=='') $(this).val("1");
     });
     $(".plus").click(function(){
-        count = $("#count").val()*1;
+        var input = $(this).closest(".count-cont").find("input");
+        count = input.val()*1;
         if(count<999) {
-            $("#count").val(count+1);
+            input.val(count+1);
         }
     });
     $(".minus").click(function(){
-        count = $("#count").val()*1;
+        var input = $(this).closest(".count-cont").find("input");
+        count = input.val()*1;
         if(count>1) {
-            $("#count").val(count-1);
+            input.val(count-1);
         }
     });
-    if($( "#price-slider" ).length>0) {
-        slider_init("price",0,15000);
-    }
     
     $("#list-view").click(function(){
         $("#category-list").addClass("list-view");

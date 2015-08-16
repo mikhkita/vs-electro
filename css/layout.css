@@ -207,6 +207,7 @@ button {
 		cursor: pointer;
 
 	}
+
 .arrow {
 	position: absolute;
 	background-image: url("../i/arrows.png");
@@ -251,6 +252,56 @@ button {
   	margin-left: -457px;
   	bottom: 0px;
 }
+.b-text-cont{
+	padding-top: 50px;
+}
+.b-text-cont{
+	text-align: left;
+}
+.b-text p,.b-text ul li{
+	font-family: "OSR";
+	font-size: 13px;
+    line-height: 1.9;
+    color: #151515;
+    margin-bottom: 15px;
+}
+.b-text h4{
+	color: #1a1a1a;
+	font-size: 16px;
+    font-family: "OSS";
+	margin-bottom: 10px;
+}
+.b-text h3{
+	font-family: "OSS";
+    font-size: 24px;
+    color: #151515;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+.b-text h2{
+	color: #1a1a1a;
+    font-size: 32px;
+    font-family: 'OSL';
+   	margin-bottom: 18px;
+}
+.b-text img {
+	margin-top: 10px;
+    margin-bottom: 20px;
+	max-width: 100%;
+	max-height: 100%;
+}
+.b-text ul{
+	margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.b-text ul li{
+	list-style: disc;
+	list-style-position: inside;
+	margin-bottom: 9px;
+}
+
+
 .fancybox-close {
 	display: none;
 }
@@ -438,14 +489,14 @@ ul.catalog-cont{
 				.sub-menu li a:hover{
 					text-decoration: none;
 				}
-.count{
+.count-cont {
     border: 1px solid #dedede;				
     background-color: #fff;
     border-radius: 3px;
     margin-left: 9px;
     margin-right: 9px;
 }
-	.count span{
+	.count-cont span{
 		width: 34px;
 		height: 40px;
 		display: block;
@@ -454,10 +505,10 @@ ul.catalog-cont{
 		box-sizing: border-box;
 		cursor: pointer;
 	}
-	.count span.minus {
+	.count-cont span.minus {
 		padding-top: 4px;
 	}
-		.count span:hover{
+		.count-cont span:hover{
 			background: #feaf00; /* Old browsers 
 			background: -moz-linear-gradient(top,  #feaf00 0%, #fb8910 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feaf00), color-stop(100%,#fb8910)); /* Chrome,Safari4+ */
@@ -468,7 +519,7 @@ ul.catalog-cont{
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feaf00', endColorstr='#fb8910',GradientType=0 ); /* IE6-9 */
 
 		}
-		.count span i {
+		.count-cont span i {
 			background-image: url("../i/count.png");
 			background-position: 26px 50%;
 			width: 8px;
@@ -476,19 +527,19 @@ ul.catalog-cont{
 			background-size: 34px 8px;
 			display: inline-block;
 		}
-		.count span.minus i{
+		.count-cont span.minus i{
 			background-position: 9px 50%;
 			width: 9px;
 			height: 2px;
 		}
 
-			.count span:hover i {
+			.count-cont span:hover i {
 				background-position: 34px 50%;
 			}
-			.count span.minus:hover i{
+			.count-cont span.minus:hover i{
 				background-position: 18px 50%;
 			}
-		.count input{
+		.count-cont input{
 			width: 51px;
 			height: 40px;
 			text-align: center;
@@ -1709,25 +1760,25 @@ ul.catalog-cont{
 			.b-basket-small .basket-small-cont li .item-count {
 				padding-right: 20px;
 			}	
-				.b-basket-small .basket-small-cont li .item-count .count{
+				.b-basket-small .basket-small-cont li .item-count .count-cont{
 				    margin-left: 0px;
 				    margin-right: 0px;
 				}
-					.b-basket-small .basket-small-cont li .item-count .count span{
+					.b-basket-small .basket-small-cont li .item-count .count-cont span{
 						width: 18px;
 						height: 22px;
 						padding: 0px;
 					}
-					.b-basket-small .basket-small-cont li .item-count .count span.minus {
+					.b-basket-small .basket-small-cont li .item-count .count-cont span.minus {
 
 					}
-						.b-basket-small .basket-small-cont li .item-count .count span i {
+						.b-basket-small .basket-small-cont li .item-count .count-cont span i {
 							margin-bottom: 2px;
 						}
-						.b-basket-small .basket-small-cont li .item-count .count span.minus i{
+						.b-basket-small .basket-small-cont li .item-count .count-cont span.minus i{
 							margin-bottom: 5px;
 						}
-						.b-basket-small .basket-small-cont li .item-count .count input{
+						.b-basket-small .basket-small-cont li .item-count .count-cont input{
 							width: 30px;
 							height: 22px;
 							font-size: 12px;

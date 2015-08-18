@@ -1306,15 +1306,15 @@ ul.catalog-cont{
 				font-size: 13px;
 				font-family: "OSS";
 		}
-    .b-category .category-list {
+    .category-list {
 		width: 717px;
 	}
-		.b-category .category-list ul.tabs{
+		.category-list ul.tabs{
 			border-top: 1px solid #d7d7d7;		
 			display: inline-block;
 			border-left: 1px solid #d7d7d7;
 		}
-			.b-category .category-list ul.tabs li{
+			.category-list ul.tabs li{
 				background-color: #ececec;
 				float: left;
 				width: 142px;
@@ -1323,37 +1323,37 @@ ul.catalog-cont{
 				border-left: none;
 				text-align: center;
 			}
-				.b-category .category-list ul.tabs li.active{
+				.category-list ul.tabs li.active{
 					background-color: #d0cfd0;	
 				}
 
-					.b-category .category-list ul.tabs li:hover{
+					.category-list ul.tabs li:hover{
 						background-color: #E0E0E0;
 					}
-					.b-category .category-list ul.tabs li.active:hover{
+					.category-list ul.tabs li.active:hover{
 						background-color: #d0cfd0;	
 					}
-				.b-category .category-list ul.tabs li a{
+				.category-list ul.tabs li a{
 					font-size: 14px;
 					font-family: "OSS";
 					padding: 15px 15px 20px;
 					color: #1a1a1a;
 					display: block;
 				}
-					.b-category .category-list ul.tabs li.active a{
+					.category-list ul.tabs li.active a{
 						cursor: default;
 					}
-		.b-category .category-list .sort{
+		.category-list .sort{
 			margin-top: 20px;
 			
 		}
-			.b-category .category-list .sort h4{
+			.category-list .sort h4{
 				font-size: 13px;
 				font-family: "OSS";
 			
 				margin-right: 20px;
 }
-			.b-category .category-list .sort a{
+			.category-list .sort a{
 				font-size: 13px;
 				color: #1a1a1a;
 				display: block;
@@ -1361,7 +1361,7 @@ ul.catalog-cont{
 				border-bottom: 1px dotted #1a1a1a;
 				margin-right: 47px;
 }
-				.b-category .category-list .sort a:after{
+				.category-list .sort a:after{
 					position: absolute;
 						content: "s";
 						font-size: 0px;
@@ -1373,18 +1373,18 @@ ul.catalog-cont{
 						background-repeat: no-repeat;
 						background-image: url("../i/sort-arrows.png");
 				}
-				.b-category .category-list .sort a:hover{
+				.category-list .sort a:hover{
 					border:none !important;
 				}
-				.b-category .category-list .sort a.active{
+				.category-list .sort a.active{
 					background-position: -7px 50%;
 					color: #f98411;
 					border-bottom: 1px dotted #f98411;
 				}
-				.b-category .category-list .sort a.active:after{
+				.category-list .sort a.active:after{
 					background-position: -7px 50%;
 				}
-			.b-category .category-list .sort span{
+			.category-list .sort span{
 				font-size: 13px;
 				display: block;
 				cursor: pointer;
@@ -1392,7 +1392,7 @@ ul.catalog-cont{
 				margin-left: 37px;
 					margin-top: 2px;
 			}
-				.b-category .category-list .sort span:before{
+				.category-list .sort span:before{
 					position: absolute;
 						content: "s";
 						font-size: 0px;
@@ -1404,27 +1404,27 @@ ul.catalog-cont{
 						background-repeat: no-repeat;
 						background-image: url("../i/view-type.png");
 				}
-				.b-category .category-list .sort span.window:before{
+				.category-list .sort span.window:before{
 					background-position: -10px 50%;
 					width: 10px;
 						height: 10px;
 				}
-				.b-category .category-list .sort span.active{
+				.category-list .sort span.active{
 					color: #f98411;
 					cursor: default;
 				}
-					.b-category .category-list .sort span.active:before{
+					.category-list .sort span.active:before{
 						background-position: -20px 50%;
 					}
-					.b-category .category-list .sort span.window.active:before{
+					.category-list .sort span.window.active:before{
 						background-position: 0px 50%;
 					}
-		.b-category .category-items {
+		.category-items {
 			margin-top: 13px;
 			text-align: left;
 			margin-bottom: 30px;
 		}
-			.b-category .category-items li {
+			.category-items li {
 				float: left;
 				background-color: #fff;
 				width: 227px;
@@ -1436,33 +1436,33 @@ ul.catalog-cont{
 				margin-top: 18px;
 				cursor: default;
 			}
-			.b-category .category-items li:nth-child(3n) {
+			.category-items li:nth-child(3n) {
 				margin-right: 0;
 			}
-				.b-category .category-items li .img {
+				.category-items li .img {
 					display: table;
 					width: 100%;
 					height: 124px;
 				}
-					.b-category .category-items li .img div{
+					.category-items li .img div{
 						display: table-cell;
 						height: 100%;
 						font-size: 0;
 						vertical-align: middle;
 						text-align: center;
 					}
-						.b-category .category-items li .img div img {
+						.category-items li .img div img {
 							max-height: 124px;
 							max-width: 100%;
 						}
-				.b-category .category-items li .item-desc{
+				.category-items li .item-desc{
 					margin-top: 6px;
 
 				
 					height: 105px;
 					overflow: hidden;
 }
-					.b-category .category-items li .item-desc a{
+					.category-items li .item-desc a{
 						font-size: 14px;
 						font-family: "OSS";
 						text-decoration: underline;
@@ -1472,46 +1472,46 @@ ul.catalog-cont{
 						color: #1a1a1a;
 						display: block;
 }
-						.b-category .category-items li .item-desc a:hover {
+						.category-items li .item-desc a:hover {
 							text-decoration: none;
 						}
-					.b-category .category-items li .item-desc p{
+					.category-items li .item-desc p{
 						font-size: 12px;
 						line-height: 1.5;
 						margin-top: 7px;
 						color: #5f5f5f;
 					}
-				.b-category .category-items li .item-price{
+				.category-items li .item-price{
 					margin-top: 12px;
 					font-family: "OSS";
 					
 				}
-					.b-category .category-items li .item-price h4{
+					.category-items li .item-price h4{
 						font-size: 14px;
 						display: inline-block;
 					}
-					.b-category .category-items li .item-price div {
+					.category-items li .item-price div {
 						margin-bottom: 13px;
 					}
-						.b-category .category-items li .item-price div h5{
+						.category-items li .item-price div h5{
 							display: inline-block;
 							color: #f98411;
 							font-size: 15px;
 						}
-							.b-category .category-items li .item-price div h5 span{
+							.category-items li .item-price div h5 span{
     							font-size: 18px;
 						
 							}
-					.b-category .category-items li .item-price .b-green-butt{
+					.category-items li .item-price .b-green-butt{
 					    width: 186px;					
 					    padding: 10px 0 11px;
 					    font-size: 13px;
 					    font-family: "OSS";
 					}
-			.b-category .category-items.list-view {
+			.category-items.list-view {
 				margin-top: 18px;
 			}
-			.b-category .category-items.list-view li {
+			.category-items.list-view li {
 				display: block;
 				width: 100%;
 				padding: 12px 14px 21px 18px;
@@ -1519,15 +1519,15 @@ ul.catalog-cont{
 			
 				margin-right: 0;
 			}
-				.b-category .category-items.list-view li .img {
+				.category-items.list-view li .img {
 					display: table;
 					width: 135px;
 					float: left;
 				}
-					.b-category .category-items.list-view li .img div img {
+					.category-items.list-view li .img div img {
 						max-width: 135px;
 					}
-				.b-category .category-items.list-view li .item-desc{
+				.category-items.list-view li .item-desc{
 					margin-top: 12px;
 					width: 300px;
 					float: left;
@@ -1536,24 +1536,24 @@ ul.catalog-cont{
 					height: 112px;
 					overflow: hidden;
 				}
-					.b-category .category-items.list-view li .item-desc p{
+					.category-items.list-view li .item-desc p{
 						margin-top: 12px;
 					
 					}
-				.b-category .category-items.list-view li .item-price{
+				.category-items.list-view li .item-price{
 					margin-top: 11px;
 					float: right;
 
 				}
-					.b-category .category-items.list-view li .item-price div h4{
+					.category-items.list-view li .item-price div h4{
 						display: block;
 					}
-		.b-category .category-list .more{
+		.category-list .more{
 			font-size: 13px;
 			color: #8b8b8b;
 			cursor: pointer;
 		}
-			.b-category .category-list .more span{
+			.category-list .more span{
 				display: inline-block;
 				width: 24px;
 				height: 22px;
@@ -1563,7 +1563,7 @@ ul.catalog-cont{
 				text-align: center;
 				margin-right: 6px;
 			}
-				.b-category .category-list .more span i{
+				.category-list .more span i{
 					display: inline-block;
 					width: 8px;
 					height: 8px;

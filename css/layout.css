@@ -258,6 +258,9 @@ button {
 .b-text-cont{
 	text-align: left;
 }
+.b-text b {
+	font-family: "OSS";
+}
 .b-text p,.b-text ul li{
 	font-family: "OSR";
 	font-size: 13px;
@@ -292,13 +295,15 @@ button {
 }
 .b-text ul{
 	margin-top: 15px;
-    margin-left: 20px;
+    
+	margin-left: 20px;
     margin-bottom: 15px;
 }
 .b-text ul li{
 	list-style: disc;
-	list-style-position: inside;
+	/* list-style-position: inside; */
 	margin-bottom: 9px;
+	padding-left: 5px;
 }
 
 

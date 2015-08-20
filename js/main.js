@@ -183,22 +183,6 @@ $(document).ready(function(){
                 }
                 obj.slider( "values", 1, $(this).val()*1 );
 	        });
-	        // min_input.focusout(function(){
-         //        if( min_input.val()=='' ) {
-         //            obj.slider( "values", 0, min_val );
-         //            // return false;
-         //        }
-	        //     // if((min_input.val()*1) < min_val) min_input.val("");
-	        //     // if(max_input.val()!="" && ((min_input.val()*1) > max_input.val()*1) ) min_input.val(max_input.val()*1);
-         //     //    if(max_input.val()=="" && ((min_input.val()*1) > max_val) ) min_input.val(max_val);
-	        // });
-	        // max_input.focusout(function(){
-         //        if( max_input.val()=='' ) {
-         //            obj.slider( "values", 1, max_val );
-         //            // return false;
-         //        }
-	        //     // if((max_input.val()*1) > max_val) max_input.val("");
-	        // });
     	});
     	
     }

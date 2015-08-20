@@ -173,15 +173,30 @@ $(document).ready(function(){
     if ($(".slider-range").length) range_init();
 
     $(".b-category .filter .filter-item-cont").click(function(){
-        $(this).find(".filter-item").slideToggle();
+        if($(this).hasClass("active")) {
+            $(this).removeClass("active").find(".filter-item").slideUp();
+        } else {
+            $(this).addClass("active").find(".filter-item").slideDown();
+        }
+
     });
+    $(".b-category .filter .filter-item-cont.active .filter-item").show();
 
     $("#basket-open").click(function(){
         $(".basket-small-cont").slideDown();
         $("#basket-open").hide();
+        $("#minimize-basket").show();
         $("#basket-show-all").css("display","block");
         return false;
     });
+
+    $("#minimize-basket").click(function(){
+        $(".basket-small-cont").slideUp();
+        $("#basket-open").show();
+        $("#basket-show-all,#minimize-basket").css("display","none");
+        return false;
+    });
+
     $("#close-basket").click(function(){
         $(".b-basket-small").slideUp();
         return false;

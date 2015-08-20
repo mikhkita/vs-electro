@@ -172,7 +172,9 @@ $(document).ready(function(){
     }
     if ($(".slider-range").length) range_init();
 
-
+    $(".b-category .filter .filter-item-cont").click(function(){
+        $(this).find(".filter-item").slideToggle();
+    });
 
     $("#basket-open").click(function(){
         $(".basket-small-cont").slideDown();

@@ -295,13 +295,11 @@ button {
 }
 .b-text ul{
 	margin-top: 15px;
-    
-	margin-left: 20px;
+	margin-left: 22px;
     margin-bottom: 15px;
 }
 .b-text ul li{
 	list-style: disc;
-	/* list-style-position: inside; */
 	margin-bottom: 9px;
 	padding-left: 5px;
 }
@@ -1203,11 +1201,15 @@ ul.catalog-cont{
 }
 	.b-category .filter {
 		width: 220px;
-	}
+	}	
+		.b-category .filter .filter-items-cont{
+			margin-bottom: 15px;
+		}
+
 		.b-category .filter .filter-item-cont{
 			text-align: left;
-		
-			margin-bottom: 25px;
+			margin-bottom: 5px;
+			cursor: pointer;
 		}
 			.b-category .filter .filter-item-cont h3{
 				font-size: 14px;
@@ -1217,6 +1219,8 @@ ul.catalog-cont{
 			}
 				.b-category .filter .filter-item-cont .filter-item {
 					margin-top: 16px;
+					margin-bottom: 25px;
+					display: none;
 				}
 					.b-category .filter .filter-item-cont .filter-item.slide-type .range-inputs {
 
@@ -1975,6 +1979,76 @@ ul.catalog-cont{
 		.b-continue li:hover h4 {
 			text-decoration: underline;
 		}
+
+.category-items.list-view.news li .img {
+	height: 200px;
+	width: 200px;
+}
+	.category-items.list-view.news li .img div img{
+		max-width: 200px;
+		max-height: 200px;
+	}
+.category-items.list-view.news li .item-desc {
+	width: 475px;
+	height: 175px;
+}
+.category-items.list-view.news li .item-price {
+	margin-top: 80px;
+}
+.news li .item-desc h5 {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #bababa;
+}
+.category-items.list-view.news li .item-desc p {
+	margin-top: 5px;
+}
+.news-detail {
+	text-align: left;
+}
+	.news-detail .b-text{
+		margin-top: 30px;
+	}
+		.news-detail .b-text img{
+			float: left;
+			max-width: 400px;
+			margin: 0;
+			margin-right: 30px;
+		}
+		.news-detail .b-text p{
+			display: inline;
+			line-height: 24px;
+		}
+			.news-detail .b-text p:after{
+				content: ".";
+		    	font-size: 0px;
+		    	display: block;
+			}
+	.news-detail .b-continue li{
+		width: 223px;
+		margin: 22px 22px 0 0;
+	}
+	.news-detail .b-continue li:last-child{
+		margin-right: 0;
+	}
+		.news-detail .b-continue li a{
+			padding: 15px;
+		}
+			.news-detail .b-continue h4{
+				height: auto;
+				text-align: left;
+			}
+			.news-detail .b-continue h5{
+				margin-top: 5px;
+				font-size: 12px;
+				text-align: left;
+				color: #A59F9F;
+			}
+			.news-detail .b-continue p{
+				font-size: 13px;		
+				text-align: left;	
+				margin-top: 5px;
+			}
 @media screen and (max-width: 1250px){
 	
 }

@@ -43,6 +43,19 @@
 		<li class="v" style="margin-left:480px"></li>
 		<li class="v" ></li>
 	</ul>
+	<div class="b b-header-menu">
+		<div class="b-block clearfix">
+			<ul class="left clearfix">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Поставщикам</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
 	<div class="b b-header-main">
 		<div class="b-block clearfix">
 			<div class="logo-cont left">
@@ -51,99 +64,79 @@
 			<div class="desc left">
 				<h4>Бесшумные<br>газовые электрогенераторы с доставкой по всей России</h4>
 			</div>
+			<div class="basket right">
+				<h3>Моя корзина</h3>
+				<h6>Сейчас Ваша корзина пуста</h6>
+			</div>
 			<div class="call right">
 				<h2>+7 (495) 777-96-37</h2>
 				<a href="#" class="b-orange-butt">Заказать звонок</a>
 			</div>
-		</div>
-	</div>
-
-	<div class="b b-catalog back">
-		<div class="b-block clearfix">
-			<div class="title">
-					<span></span>
-					<h2>Корзина</h2>
-			</div>
-			<div class="b-basket">
-				<div class="basket-title clearfix">
-					<h3 class="left">Товар</h3>
-					<h3 class="left">Цена</h3>
-					<h3 class="left">Количество</h3>
-					<h3 class="right">Сумма, руб.</h3>
-				</div>
+			<div class="search clearfix">
 				<form action="#">
-					<ul>
-						<li>
-							<div class="img">
-								<img src="i/basket-item.jpg">
-							</div>
-							<div class="item-desc">
-								<div>
-									<a href="#">ПСМ ADMi-8</a>
-									<p>Независимые источники электроэнергии</p>
-								</div>
-							</div>
-							<div><h4 class="item-price">45 000</h4></div>
-							<div class="item-count">
-								<div class="count-cont clearfix">
-									<span class="plus left" onselectstart="return false;"><i onselectstart="return false;"></i></span>
-									<input class="left" name="count1"  maxlength="3" value="1">
-									<span class="minus right" onselectstart="return false;"><i onselectstart="return false;"></i></span>	
-								</div>
-							</div>
-							<div><h4 class="item-sum">45 000</h4></div>
-						</li>
-						<li>
-							<div class="img">
-								<img src="i/basket-item.jpg">
-							</div>
-							<div class="item-desc">
-								<div>
-									<a href="#">ПСМ ADMi-8</a>
-									<p>Независимые источники электроэнергии</p>
-								</div>
-							</div>
-							<div><h4 class="item-price">45 000</h4></div>
-							<div class="item-count">
-								<div class="count-cont clearfix">
-									<span class="plus left" onselectstart="return false;"><i onselectstart="return false;"></i></span>
-									<input class="left" name="count2"  maxlength="3" value="1">
-									<span class="minus right" onselectstart="return false;"><i onselectstart="return false;"></i></span>	
-								</div>
-							</div>
-							<div><h4 class="item-sum">45 000</h4></div>
-						</li>
-						<li>
-							<div class="img">
-								<img src="i/basket-item.jpg">
-							</div>
-							<div class="item-desc">
-								<div>
-									<a href="#">ПСМ ADMi-8</a>
-									<p>Независимые источники электроэнергии</p>
-								</div>
-							</div>
-							<div><h4 class="item-price">45 000</h4></div>
-							<div class="item-count">
-								<div class="count-cont clearfix">
-									<span class="plus left" onselectstart="return false;"><i onselectstart="return false;"></i></span>
-									<input class="left" name="count3"  maxlength="3" value="1">
-									<span class="minus right" onselectstart="return false;"><i onselectstart="return false;"></i></span>	
-								</div>
-							</div>
-							<div><h4 class="item-sum">45 000</h4></div>
-						</li>
-					</ul>
-					<div class="clearfix">
-						<h5 class="right">Сумма: <span class="value">90 000</span><span class="name"> руб.</span></h5>
-						<h5 class="right amount">Товаров: <span>2</span></h5>
-					</div>
-					<div class="clearfix basket-order">
-						<input type="submit" class="right b-green-butt" value="Оформить заказ">
-						<input class="right" type="text" name="phone" placeholder="Введите Ваш телефон*" required>
+					<div class="catalog left">Каталог товаров</div>
+					<div class="search-cont left clearfix">
+						<label class="left" for='search'></label>
+						<input type="text" class="left" id="search" placeholder="Введите название товара">
+						<div>
+							<button id="search-btn" type="submit" class="b-orange-butt">Найти</button>
+						</div>
 					</div>
 				</form>
 			</div>
+		</div>
+	</div>
+	<div class="b b-catalog back">
+		<div class="b-block clearfix">
+			<ul class="sub-menu clearfix">
+					<li><a href="#">Главная</a></li>
+					<li class="active"><a href="#">Новости</a></li>
+				</ul>
+			<div class="title">
+				<span></span>
+				<h2>Новости</h2>
+			</div>
+			<ul class="clearfix category-items list-view news">
+				<li class="clearfix">
+					<div class="img">
+						<div><img src="i/category-item.jpg"></div>
+					</div>
+					<div class="item-desc">
+						<a href="#">Генератор бензиновый Hyundai HY 3100</a>
+						<h5>01.01.2015</h5>
+						<p>Конструктивные особенности данного оборудования обеспечивают продолжительный срок службы и сравнительно низкую стоимость эксплуатации данного оборудования. Кроме того, за счёт конструктивных особенностей дизель-генераторные установки неприхотливы в обслуживании.Сфера применения дизельных генераторов достаточно обширна: сельское хозяйство, медицинские учреждения, производство, строительство, торговые павильоны, нефтегазовая отрасль, а также места, где отсутствует централизованное электроснабжение.</p>
+					</div>
+					<div class="item-price">
+						<a href="#" class="b-green-butt">Перейти к новости</a>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="img">
+						<div><img src="i/category-item.jpg"></div>
+					</div>
+					<div class="item-desc">
+						<a href="#">Генератор бензиновый Hyundai HY 3100</a>
+						<h5>01.01.2015</h5>
+						<p>Конструктивные особенности данного оборудования обеспечивают продолжительный срок службы и сравнительно низкую стоимость эксплуатации данного оборудования. Кроме того, за счёт конструктивных особенностей дизель-генераторные установки неприхотливы в обслуживании.Сфера применения дизельных генераторов достаточно обширна: сельское хозяйство, медицинские учреждения, производство, строительство, торговые павильоны, нефтегазовая отрасль, а также места, где отсутствует централизованное электроснабжение.</p>
+					</div>
+					<div class="item-price">
+						<a href="#" class="b-green-butt">Перейти к новости</a>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="img">
+						<div><img src="i/category-item.jpg"></div>
+					</div>
+					<div class="item-desc">
+						<a href="#">Генератор бензиновый Hyundai HY 3100</a>
+						<h5>01.01.2015</h5>
+						<p>Конструктивные особенности данного оборудования обеспечивают продолжительный срок службы и сравнительно низкую стоимость эксплуатации данного оборудования. Кроме того, за счёт конструктивных особенностей дизель-генераторные установки неприхотливы в обслуживании.Сфера применения дизельных генераторов достаточно обширна: сельское хозяйство, медицинские учреждения, производство, строительство, торговые павильоны, нефтегазовая отрасль, а также места, где отсутствует централизованное электроснабжение.</p>
+					</div>
+					<div class="item-price">
+						<a href="#" class="b-green-butt">Перейти к новости</a>
+					</div>
+				</li>
+			</ul>		
 		</div>
 	</div>
 	<div class="b b-footer">
@@ -183,8 +176,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 <div style="display:none;">
 	<div id="b-popup-1">
 			<div class="for_all b-popup" >

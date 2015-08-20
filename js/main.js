@@ -132,41 +132,73 @@ $(document).ready(function(){
 		        max: max_val,
 		        values: [ cur_min_val, cur_max_val ],
 		        slide: function( event, ui ) {
-		            min_input.val( ui.values[ 0 ] );
-		            max_input.val( ui.values[ 1 ] );
+                    (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                    (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );  
 		            min_text.text( ui.values[ 0 ] );
 		            max_text.text( ui.values[ 1 ] );
 
 		        },
-		        change: function( event, ui ) {
-	                min_input.val( ui.values[ 0 ] );
-		            max_input.val( ui.values[ 1 ] );
+		        change: function( event, ui ) {  
+                    (ui.values[ 0 ] == min_val) ? min_input.val('') : min_input.val( ui.values[ 0 ] );
+                    (ui.values[ 1 ] == max_val) ? max_input.val('') : max_input.val( ui.values[ 1 ] );       
 		            min_text.text( ui.values[ 0 ] );
 		            max_text.text( ui.values[ 1 ] );
 	            }
 		    });
-		    min_input.val( cur_min_val );
-            max_input.val( cur_max_val );
+            (cur_min_val == min_val) ? min_input.val('') : min_input.val( cur_min_val );
+		    (cur_max_val == max_val) ? max_input.val('') : max_input.val( cur_max_val );
             min_text.text( cur_min_val );
             max_text.text( cur_max_val );
 
             min_input.change(function() {
-            if(($(this).val()*1)<min_val || $(this).val()=='') $(this).val(min_val);
-            if(($(this).val()*1)>max_input.val()*1) $(this).val(max_input.val()*1);
-            obj.slider( "values", 0, $(this).val() );
+            if($(this).val()=='' || (($(this).val()*1) <= min_val) )  {
+                $(this).val('');
+                obj.slider( "values", 0, min_val );
+                return true;
+            }
+            if(max_input.val()=="" && (($(this).val()*1) > max_val) ) {
+                $(this).val(max_val);
+                obj.slider( "values", 0, max_val );
+                return true;
+            }
+            if(max_input.val()!="" && (($(this).val()*1) > max_input.val()*1) ) {
+                $(this).val(max_input.val());       
+            }
+            obj.slider( "values", 0, $(this).val()*1 );
+            
 	        });
 	        max_input.change(function() {
-	            if(($(this).val()*1)>max_val || $(this).val()=='') $(this).val(max_val);
-	            if(($(this).val()*1)<min_input.val()*1) $(this).val(min_input.val()*1);
-	            obj.slider( "values", 1, $(this).val() );
+	            if($(this).val()=='' || (($(this).val()*1) >= max_val) ) {
+                    $(this).val('');
+                    obj.slider( "values", 1, max_val );
+                    return true;
+                }
+	            if(min_input.val()=="" && (($(this).val()*1) < min_val) ) {
+                    $(this).val(min_val);
+                    obj.slider( "values", 1, min_val );
+                    return true;
+                }
+                if(min_input.val()!="" && (($(this).val()*1) < min_input.val()*1) ) {
+                    $(this).val(min_input.val());    
+                }
+                obj.slider( "values", 1, $(this).val()*1 );
 	        });
-	        min_input.focusout(function(){
-	            if((min_input.val()*1) < min_val || min_input.val()=='') min_input.val(min_val);
-	            if((min_input.val()*1) > max_input.val()*1) min_input.val(max_input.val()*1);
-	        });
-	        max_input.focusout(function(){
-	            if((max_input.val()*1) > max_val || max_input.val()=='') max_input.val(max_val);
-	        });
+	        // min_input.focusout(function(){
+         //        if( min_input.val()=='' ) {
+         //            obj.slider( "values", 0, min_val );
+         //            // return false;
+         //        }
+	        //     // if((min_input.val()*1) < min_val) min_input.val("");
+	        //     // if(max_input.val()!="" && ((min_input.val()*1) > max_input.val()*1) ) min_input.val(max_input.val()*1);
+         //     //    if(max_input.val()=="" && ((min_input.val()*1) > max_val) ) min_input.val(max_val);
+	        // });
+	        // max_input.focusout(function(){
+         //        if( max_input.val()=='' ) {
+         //            obj.slider( "values", 1, max_val );
+         //            // return false;
+         //        }
+	        //     // if((max_input.val()*1) > max_val) max_input.val("");
+	        // });
     	});
     	
     }

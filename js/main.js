@@ -172,11 +172,12 @@ $(document).ready(function(){
     }
     if ($(".slider-range").length) range_init();
 
-    $(".b-category .filter .filter-item-cont").click(function(){
-        if($(this).hasClass("active")) {
-            $(this).removeClass("active").find(".filter-item").slideUp();
+    $(".b-category .filter .filter-item-cont h3").click(function(){
+        var obj = $(this).closest(".filter-item-cont");
+        if(obj.hasClass("active")) {
+            obj.removeClass("active").find(".filter-item").slideUp();
         } else {
-            $(this).addClass("active").find(".filter-item").slideDown();
+            obj.addClass("active").find(".filter-item").slideDown();
         }
 
     });

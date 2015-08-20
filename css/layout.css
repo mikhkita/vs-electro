@@ -1208,34 +1208,32 @@ ul.catalog-cont{
 
 		.b-category .filter .filter-item-cont{
 			text-align: left;
-			margin-bottom: 5px;
-			cursor: pointer;
+			margin-bottom: 5px;			
 		}
 			.b-category .filter .filter-item-cont h3{
 				font-size: 14px;
 				font-family: "OSS";
 				background-color: #e6e6e6;
 				padding: 8px 12px 10px;
+				position: relative;
+				cursor: pointer;
 			}
-				.b-category .filter .filter-item-cont h3 span {
-					position: relative;
-				}
-					.b-category .filter .filter-item-cont h3 span:after {
+					.b-category .filter .filter-item-cont h3:after {
 						position: absolute;
 					    content: "s";
 					    font-size: 0px;
 					    width: 4px;
 						height: 8px;
-					    right: -15px;
-					    top: 6px;
+					    right: 13px;
+					    top: 14px;
 					    background-position: -28px 50%;
 					    background-repeat: no-repeat;
 					    background-image: url("../i/sort-arrows.png");
 					}
-						.b-category .filter .filter-item-cont.active h3 span:after {
+						.b-category .filter .filter-item-cont.active h3:after {
 							width: 7px;
 					    	height: 4px;
-							top: 9px;
+							top: 17px;
 						    background-position: 0px 50%;
 						}
 				.b-category .filter .filter-item-cont .filter-item {

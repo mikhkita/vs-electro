@@ -213,6 +213,7 @@ $(document).ready(function(){
         }
 
     });
+    $(".b-category .filter .filter-item-cont .filter-item").hide();
     $(".b-category .filter .filter-item-cont.active .filter-item").show();
 
     $("#basket-open").click(function(){

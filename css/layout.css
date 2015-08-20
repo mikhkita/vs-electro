@@ -79,7 +79,7 @@ button {
 	border: none;
 }
 .ps-lines{
-
+	display: none;
 }
 	.ps-lines li.v{
 		position: fixed;

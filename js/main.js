@@ -15,6 +15,22 @@ $(document).ready(function(){
     }
     $(window).resize(resize);
     resize();
+
+    var max = 0;
+    $(".tabs a").each(function(){
+        if( max < $(this).height() ){
+            max = $(this).height();
+        } 
+    });
+    $(".tabs li").css("height",max+35);
+
+    $(".order-button").click(function(){
+        $("#sort-field").val($(this).attr("data-field"));
+        $("#sort-order").val($(this).attr("data-order"));
+        $("#left-filter").submit();
+        return false;
+    });
+
    $('.partners-slider').slick({
         slidesToShow: 5,
         slidesToScroll: 1,

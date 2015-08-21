@@ -64,6 +64,8 @@ $(document).ready(function(){
 				if( $this.attr("data-afterShow") && customHandlers[$this.attr("data-afterShow")] ){
 					customHandlers[$this.attr("data-afterShow")]($this);
 				}
+				if( $popup.find("input[type='text']").eq(0).length )
+					$popup.find("input[type='text']").eq(0).focus();
 			},
 			beforeClose: function(){
 				if( $this.attr("data-beforeClose") && customHandlers[$this.attr("data-beforeClose")] ){

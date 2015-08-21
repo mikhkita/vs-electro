@@ -1240,11 +1240,15 @@ ul.catalog-cont{
 					margin-top: 16px;
 					margin-bottom: 25px;
 					display: none;
+					overflow-x: visible !important;
 				}
 					.b-category .filter .filter-item-cont .filter-item.slide-type .range-inputs {
 
 					}
 						.b-category .filter .filter-item-cont .filter-item.slide-type .range-inputs label {
+							font-size: 13px;	
+						}
+						.b-category .filter .filter-item-cont .filter-item.slide-type .range-inputs span {
 							font-size: 13px;	
 						}
 						.b-category .filter .filter-item-cont .filter-item.slide-type .range-inputs input{
@@ -1257,10 +1261,14 @@ ul.catalog-cont{
 							margin-right: 11px;
 							padding: 0 10px;
 						}
+						.b-category .filter .filter-item-cont .filter-item.slide-type .range-inputs input.max-val{
+							margin-right: 0px;
+						}
 						.b-category .filter .filter-item-cont .filter-item.slide-type .slider-range {
 							background-color: #c8c8c8;
 							height: 8px;
-							width: 220px;
+							width: 200px;
+    						margin-left: 9px;
 							box-sizing: border-box;
 		  					border-radius: 5px;
 		  					margin-top: 20px;
@@ -1373,14 +1381,12 @@ ul.catalog-cont{
 					}
 		.category-list .sort{
 			margin-top: 20px;
-			
 		}
 			.category-list .sort h4{
 				font-size: 13px;
 				font-family: "OSS";
-			
 				margin-right: 20px;
-}
+			}
 			.category-list .sort a{
 				font-size: 13px;
 				color: #1a1a1a;
@@ -1388,29 +1394,34 @@ ul.catalog-cont{
 				position: relative;
 				border-bottom: 1px dotted #1a1a1a;
 				margin-right: 47px;
-}
+			}
 				.category-list .sort a:after{
 					position: absolute;
-						content: "s";
-						font-size: 0px;
-						width: 7px;
-						height: 4px;
+					content: "s";
+					font-size: 0px;
+					width: 7px;
+					height: 4px;
 					right: -15px;
 					top: 9px;
-						background-position: 0px 50%;
-						background-repeat: no-repeat;
-						background-image: url("../i/sort-arrows.png");
+					background-position: 0px 50%;
+					background-repeat: no-repeat;
+					background-image: url("../i/sort-arrows.png");
+				}
+				.category-list .sort a.up:after{
+					background-position: -14px 50%;
 				}
 				.category-list .sort a:hover{
 					border:none !important;
 				}
 				.category-list .sort a.active{
-					background-position: -7px 50%;
 					color: #f98411;
 					border-bottom: 1px dotted #f98411;
 				}
 				.category-list .sort a.active:after{
 					background-position: -7px 50%;
+				}
+				.category-list .sort a.up.active:after{
+					background-position: -21px 50%;
 				}
 			.category-list .sort span{
 				font-size: 13px;

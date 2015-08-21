@@ -102,16 +102,34 @@ $(document).ready(function(){
     $("#list-view").click(function(){
         $("#category-list").addClass("list-view");
         $("#window-view").removeClass("active");
-        $(this).addClass("active");
-        
-        
+        $(this).addClass("active");   
+        $.cookie('category','list');  
     });
 
     $("#window-view").click(function(){
         $(this).addClass("active");
         $("#category-list").removeClass("list-view");
         $("#list-view").removeClass("active");
+        $.cookie('category','window');
     });
+
+    if($("#category-list").length && $.cookie('category') ) {
+    	if($.cookie('category')=="list") {
+    		$("#category-list").addClass("list-view");
+        	$("#window-view").removeClass("active");
+        	$("#list-view").addClass("active");  
+    	} else {
+    		$("#window-view").addClass("active");
+        	$("#category-list").removeClass("list-view");
+        	$("#list-view").removeClass("active");
+    	}
+    }
+    if($("#category-list").length && $("#category-list").hasClass("list-view")) {
+    	$.cookie('category','list');
+    } else {
+    	$.cookie('category','window');
+    }
+    
 
     function range_init() {
     	$.each($(".slider-range"),function(){
@@ -219,5 +237,7 @@ $(document).ready(function(){
         $(".b-basket-small").slideUp();
         return false;
     });
+
+    
 
 });

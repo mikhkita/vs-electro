@@ -2015,18 +2015,23 @@ ul.catalog-cont{
 		.b-continue li:hover h4 {
 			text-decoration: underline;
 		}
-
+.category-items.list-view.news li{
+	padding: 12px 14px 12px 18px;
+}
 .category-items.list-view.news li .img {
-	height: 200px;
-	width: 200px;
+	height: 140px;
+	width: 140px;
+	margin-top: 15px;
 }
 	.category-items.list-view.news li .img div img{
 		max-width: 200px;
 		max-height: 200px;
 	}
 .category-items.list-view.news li .item-desc {
-	width: 475px;
-	height: 175px;
+	width: 680px;
+	height: auto;
+	margin-bottom: 20px;
+	border-right: 0px;
 }
 .category-items.list-view.news li .item-price {
 	margin-top: 80px;

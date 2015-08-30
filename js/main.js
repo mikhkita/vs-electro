@@ -281,6 +281,7 @@ $(document).ready(function(){
         $("#basket-open").hide();
         $("#minimize-basket").show();
         $("#basket-show-all").css("display","block");
+        $.cookie('basket','full', { expires: 7, path: '/' });
         return false;
     });
 
@@ -288,14 +289,29 @@ $(document).ready(function(){
         $(".basket-small-cont").slideUp();
         $("#basket-open").show();
         $("#basket-show-all,#minimize-basket").css("display","none");
+        $.removeCookie('basket', { path: '/' });
         return false;
     });
 
     $("body").on("click","#close-basket",function(){
         $(".b-basket-small").slideUp();
+        $.cookie('basket','close', { expires: 7, path: '/' });
         return false;
     });
 
+    function basket_cookie() {
+        if($(".b-basket-small").length && $.cookie('basket') ) {
+            if($.cookie('basket')=="close") {
+                $(".b-basket-small").hide(); 
+            } else if($.cookie('basket')=="full"){
+                $(".basket-small-cont").show();           
+            }
+        }
+    }
+
+    basket_cookie();
+
+    
     $(".scrollable-link").click(function(){
         var href = $(this).attr("href"),
             arr = href.split("#");
@@ -316,7 +332,6 @@ $(document).ready(function(){
     } else {
         $(".tabs li").eq(0).click();
     }
-
     
 
 });
